@@ -1,7 +1,6 @@
 package desafios;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
@@ -10,20 +9,6 @@ public class KataDecArrowPinCode {
     static final Set<Integer> RIGHT = Set.of(0, 3, 6, 9);
     static final Set<Integer> BOTTOM = Set.of(0, 2, 3);
     static final Set<Integer> LEFT = Set.of(0, 1, 4, 7);
-
-    public KataDecArrowPinCode(){
-        System.out.println(Arrays.toString(decArrowPinCode("1→↑→")));
-        //Retorno esperado: [1, 2, 5, 6]
-
-        System.out.println(Arrays.toString(decArrowPinCode("1*2↓")));
-        //Retorno esperado: [1, 1, 1, 0]
-
-        System.out.println(Arrays.toString(decArrowPinCode("0*2↑")));
-        //Retorno esperado: [0, 0, 0, 1]
-
-        System.out.println(Arrays.toString(decArrowPinCode("0↑↑↑")));
-        //Retorno esperado: [0, 1, 4, 7]
-    }
 
     public static int[] decArrowPinCode(String arrowStr) {
         char[] strList = arrowStr.toCharArray();
