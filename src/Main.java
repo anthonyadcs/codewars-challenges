@@ -1,7 +1,10 @@
 import desafios.KataDecArrowPinCode;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        KataDecArrowPinCode kataDecArrowPinCode = new KataDecArrowPinCode();
+        System.out.println(Arrays.toString(KataDecArrowPinCode.decArrowPinCode("1→↑→")));
     }
+
 }
